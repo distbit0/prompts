@@ -2,7 +2,7 @@ If `$ARGUMENTS` is non-empty, treat it as a filename, read the contents from tha
 
 If `$ARGUMENTS` is empty, read the contents from the clipboard via `xclip`, answer the questions below about it, and copy your answers to the clipboard via `xclip -selection clipboard`.
 
-Regarding $ARGUMENTS:
+Regarding the file/clipboard contents:
 - what good questions am i not asking?
 - what do experts disagree on & why?
 - what would an expert do differently from laypeople in this context?
