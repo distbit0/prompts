@@ -58,6 +58,8 @@ Do not proceed until the user replies. Use defaults for anything not addressed.
 
 PRD generation rules:
 - Decompose selected TODO/spec into relatively self-contained/manageable features that can be implemented and verified independently.
+- One todo item should not necessarily be converted into one mrd item, e.g. if it is quite complex.
+- `plan/prd.json needs to make sense completely independently of `plan/plan.md`, `plan/spec.md` and `plan/todo.md`. Provide all required context in each prd item.
 - Write test_steps that can validate correctness (i.e. explain how to test if the feature is working as intended).
 - passes starts false; do not set it to true.
 - leave unaffected existing entries in `plan/prd.json` unchanged, but ensure there are no duplicate entries
