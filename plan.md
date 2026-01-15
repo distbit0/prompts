@@ -20,7 +20,7 @@ Workflow:
 
 Do not proceed until the user replies. Use defaults for anything not addressed.
 
-3) Review the codebase as needed to write accurate PRD details, test steps, interview questions (if requested) & plan contents (if requested). Do not implement or modify code.
+3) Review the codebase and conduct web searches as needed to write accurate PRD details, test steps, interview questions (if requested) & plan contents (if requested). Do not implement or modify code.
 
 4) If interview was requested:
    - Write `plan/interview.md`.
@@ -29,6 +29,7 @@ Do not proceed until the user replies. Use defaults for anything not addressed.
    - If `plan/interview.md` contains unrelated content, delete it first.
    - Format:
      - Each question is a markdown block quote line starting with `> `
+     - Append to each question Default answer: and then specify the default answer (how you will resolve the question if the user doesn't answer it)
      - After each question, add two blank non-block-quote lines for answers
      - Group questions by selected TODO item with headings
    - Instruct the user to fill answers, then wait until they explicitly say they are finished.
