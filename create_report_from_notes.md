@@ -1,1 +1,4 @@
 Search this vault for files that contain content related to `$ARGUMENTS`. Do not modify any existing files. Create a new Markdown (`.md`) file for this topic and populate it with a report that synthesizes the relevant notes into clear explanations. Do not paste large excerpts or dump raw quotes; instead, paraphrase and explain what the notes say, preserving all details. Attribute each non-trivial claim to one or more sources by including a `[[wikilink]]` to the source file inline or in a short “Sources” list under each section. Organize the report with headings for each sub-topic, and include an “Open questions” section when the notes are incomplete, ambiguous, or conflicting. If it is unclear/ambiguous which notes are relevant to the specified topic, feel free to ask questions to clarify intent/meaning.
+
+
+the output file to which you save this should end with _REPORT.md

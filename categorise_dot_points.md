@@ -6,10 +6,11 @@ Make sure that points in $ARGUMENTS are properly categorised by markdown heading
 
 # instructions
 - Read the text and fully understand it.
+- Propose several options/approaches for how to categorise the points which I can either select from or provide feedback on for you to use to provide a new set of categorisation options until I select one.
 - Edit the text according to the following:
     - Make minor grammar edits as needed so ideas read cleanly as bullet points.
     - De-duplicate overlapping points without losing any nuance or detail.
-    - Keep wording succinct and remove filler words (e.g., "you know", "basically", "essentially", "uh").
+    - Keep wording. succinct and remove filler words (e.g., "you know", "basically", "essentially", "uh").
     - Group similar/related points together
 
 # rules

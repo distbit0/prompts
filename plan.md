@@ -5,34 +5,7 @@ Files live under `plan/`:
 - Optional communication artifacts: `plan/interview.md`, `plan/plan.md`
 - Output backlog used by an execution loop: `plan/prd.json`
 
-Do NOT treat `plan/prd.json` as a requirements input. New requirements come only from `plan/todo.md`, `plan/spec.md`, and clarified answers in `plan/interview.md`.
-
-Ensure `plan/*` is tracked in git and not ignored.
-
-Workflow:
-
-1) Parse `plan/todo.md` and extract each distinct feature/change request.
-
-2) Present the extracted requests as a numbered list, then ask the user for a single reply containing:
-   - Which items to move into the PRD now (numbers like `1, 3, 4`), OR whether instead to use `plan/spec.md` as the source for PRD generation, OR a free-form description of what to do. (default: move all TODO items)
-   - Whether to run an interview first (yes/no). (default: no)
-   - Whether to write `plan/plan.md` before generating/updating the PRD (yes/no). (default: no)
-
-Do not proceed until the user replies. Use defaults for anything not addressed.
-
-3) Review the codebase and conduct web searches as needed to write accurate PRD details, test steps, interview questions (if requested) & plan contents (if requested). Do not implement or modify code.
-
-4) If interview was requested:
-   - Write `plan/interview.md`.
-   - Only include questions relevant to the selected items (or to translating `plan/spec.md` into a PRD).
-   - Questions must be specific and non-obvious, grounded in the codebase where helpful.
-   - If `plan/interview.md` contains unrelated content, delete it first.
-   - Format:
-     - Each question is a markdown block quote line starting with `> `
-     - Append to each question Default answer: and then specify the default answer (how you will resolve the question if the user doesn't answer it)
-     - After each question, add two blank non-block-quote lines for answers
-     - Group questions by selected TODO item with headings
-   - Instruct the user to fill answers, then wait until they explicitly say they are finished.
+Do NOT treat `plan/prd.json` as a requirements input. New requirements come only from $ARGUMENTS
 
 5) After the user is finished (or if no interview):
    - Ask follow-up questions only if gaps block correct PRD generation.
