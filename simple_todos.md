@@ -1,4 +1,4 @@
-todo source and scope: if $ARGUMENTS is set, it is the todo source file (todos under "# -- SCRATCHPAD") and the only file you may modify; if blank, use the repo's todo file and normal scope.
+todo source and scope: "$ARGUMENTS" is either empty or a file name. if it is a file name, use that file as the todo source (todos below the line "# -- SCRATCHPAD" in said file) and only modify that file (though you can read other files, if helpful). if it is empty, use the repo's todo file and normal scope.
 
 please for each todo in the source:
 - find the files/code/documents/sections which you think it relates to and propose a change to address the todo
