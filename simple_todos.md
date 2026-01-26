@@ -1,8 +1,8 @@
-todo source and scope: "$ARGUMENTS" is either empty or a file name. if it is a file name, use that file as the todo source (todos below the line "# -- SCRATCHPAD" in said file) and only modify that file (though you can read other files, if helpful). if it is empty, use the repo's todo file and normal scope.
+Todo source and scope: "$ARGUMENTS" is either empty or a file name. If it is a file name, use that file as the todo source, which means the todos below the line "# -- SCRATCHPAD" in that file. Only modify that file, though you can read other files if helpful. If there are no todos below "# -- SCRATCHPAD", read todos from the clipboard using `xclip -o -selection clipboard`. Append the clipboard content below "# -- SCRATCHPAD" in that file, then treat the appended lines as the todo source so they can be removed as you complete them. If "$ARGUMENTS" is empty, use the repo's todo file and normal scope.
 
-please for each todo in the source:
-- find the files/code/documents/sections which you think it relates to and propose a change to address the todo
-- ask me if this is correct or if i'd like to offer a clarification
-- keep updating your suggestion based on my clarification until i accept it or I implicitly accept it by telling you to take some action
-- implement your suggestion and remove the todo from the todo file
-- then move to the next todo until all are complete. do not skip any unless I ask you to
+For each todo in the source:
+- Find the files, code, documents, or sections it relates to, and propose a change that addresses it.
+- Ask me if this is correct or if I would like to offer a clarification.
+- Keep updating your suggestion based on my clarification until I accept it, or I implicitly accept it by telling you to take an action.
+- Implement your suggestion and remove the todo from the todo file.
+- Move to the next todo until all are complete. Do not skip any unless I ask you to.
