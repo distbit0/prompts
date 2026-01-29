@@ -20,5 +20,5 @@ Start Phase 2 immediately after Phase 1 is complete. Do not wait for additional 
 Phase 2: implement (driven by the recorded plan):
 - Only start implementing once Phase 1 is complete for all todos (except those I asked to skip).
 - If I tell you to start implementing the todos covered so far and skip the rest, do that even if there are remaining todos.
-- For each todo you implement, refer to the recorded plan (inline under the todo when "$ARGUMENTS" is a file name, or `plan/PLAN.md` when "$ARGUMENTS" is empty) to determine what to do.
-- Implement the plan, remove the todo from the todo file, then move to the next todo.
+- For each todo you implement, refer to the recorded plan (inline under the todo when "$ARGUMENTS" is a file name, or `plan/PLAN.md` when "$ARGUMENTS" is empty) to determine what to do. Mark each todo as complete in the plan as you complete them.
+- Implement the plan for each todo, remove the todo from the todo file, then move to the next todo in the plan file.
