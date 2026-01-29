@@ -28,7 +28,7 @@ Do not proceed until the user replies. Use defaults for anything not addressed.
    - If `plan/interview.md` contains unrelated content, delete it first.
    - Format:
      - Each question is a markdown block quote line starting with `> `
-     - Append to each question Default answer: and then specify the default answer (how you will resolve the question if the user doesn't answer it)
+     - Append to each question "Default answer: " and then specify the default answer (how you will resolve the question if the user doesn't answer it)
      - After each question, add two blank non-block-quote lines for answers
      - Group questions by selected TODO item with headings
    - After writing the questions, ask them in the terminal one at a time, in the same order as `plan/interview.md`.

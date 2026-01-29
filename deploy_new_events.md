@@ -2,6 +2,7 @@
 - For each event listed in find_new_events/events_to_deploy.json, select the correct configuration file based on the asset type:
   - Use metric_config/config_post_decision_token_price.py for token assets.
   - Use metric_config/config_post_decision_equity_price.py for equity assets.
+- Deploy events to the END of this file.
 - Add the event to the respective configuration file, unless an equivalent event is already present.
 - Create one config entry for each (event,token) pair. i.e. do not group multiple tokens into the same config event, even if they share the same condition/event.
 - Follow the formatting rules at the top of the selected config file and those specified below: 
