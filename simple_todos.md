@@ -9,9 +9,11 @@ Phase 1: clarify and plan (no implementation yet):
 - Then ask me only non-obvious questions to remove actual & material ambiguity/uncertainty regarding my intent, to facilitate planning+implementation and to ask me to confirm the approach for that todo. Pls do not waste my time with obvious/confirmatory questions.
     - If a todo ends with !, this indicates it is complex so you should think about it/investigate even more thoroughly and ask a large number of questions
     - Append to each question "Default answer: " and then specify the default answer (how you will resolve the question if the user doesn't answer it)
+        - If I do not answer a question, it means I accept the default answer. 
 - Keep updating that todo's approach based on my clarifications until I accept it, or I implicitly accept it.
 - After the current todo's approach is accepted, record a concrete plan for it based on my comments, elaborations, and responses:
   - If "$ARGUMENTS" is empty, append the plan to `plan/PLAN.md` (create it, and the `plan/` directory, if needed).
+    - Make sure the plan you append to PLAN.md is completely self-contained and doesn't require the original todo as context in order to be understood & executed
   - If "$ARGUMENTS" is a file name, append the plan as indented text directly below that todo in the same file, so the plan is visually nested under the todo item.
 - Do not ask questions for later todos until the current todo is accepted and planned.
 - After planning the last todo, check whether any new todos have been added.
