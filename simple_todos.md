@@ -7,6 +7,7 @@ Phase 1: clarify and plan (no implementation yet):
 - Work through the todo list one todo at a time.
 - For the current todo, first find the code, documents, or sections it requires modification of, then propose an approach that addresses it.
 - Then ask me only non-obvious questions to remove actual & material ambiguity/uncertainty regarding my intent, to facilitate planning+implementation and to ask me to confirm the approach for that todo. Pls do not waste my time with obvious/confirmatory questions.
+    - If a todo ends with !, this indicates it is complex so you should think about it/investigate even more thoroughly and ask a large number of questions
     - Append to each question "Default answer: " and then specify the default answer (how you will resolve the question if the user doesn't answer it)
 - Keep updating that todo's approach based on my clarifications until I accept it, or I implicitly accept it.
 - After the current todo's approach is accepted, record a concrete plan for it based on my comments, elaborations, and responses:
