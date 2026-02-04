@@ -9,7 +9,7 @@ Phase 1: clarify and plan (no implementation yet):
 - Then ask me only non-obvious questions to remove actual & material ambiguity/uncertainty regarding my intent, to facilitate planning+implementation and to ask me to confirm the approach for that todo. Pls do not waste my time with obvious/confirmatory questions.
     - If a todo ends with !, this indicates it is complex so you should think about it/investigate even more thoroughly and ask a large number of questions
     - Append to each question "Default answer: " and then specify the default answer (how you will resolve the question if the user doesn't answer it)
-        - If I do not answer a question, it means I accept the default answer. 
+        - If I do not answer a question, it means I selected the default answer. 
 - Keep updating that todo's approach based on my clarifications until I accept it, or I implicitly accept it.
 - After the current todo's approach is accepted, record a concrete plan for it based on my comments, elaborations, and responses:
   - If "$ARGUMENTS" is empty, append the plan to `plan/PLAN.md` (create it, and the `plan/` directory, if needed).
@@ -19,7 +19,7 @@ Phase 1: clarify and plan (no implementation yet):
 - After planning the last todo, check whether any new todos have been added.
 - Do not skip any todos unless I ask you to.
 
-Start Phase 2 immediately after Phase 1 is complete. Do not wait for additional confirmation to implement after recording the plan.
+Once finished phase 1, ask if I'd like to continue to phase 2 or if I have any other requests/comments/critiques.
 Phase 2: implement (driven by the recorded plan):
 - Only start implementing once Phase 1 is complete for all todos (except those I asked to skip).
 - If I tell you to start implementing the todos covered so far and skip the rest, do that even if there are remaining todos.
