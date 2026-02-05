@@ -1,5 +1,5 @@
 # Task
-- If `$ARGUMENTS` is non-empty, treat it as a filename, read the contents from that file, and write the final re-statement back to the same file.
+- If `$ARGUMENTS` is non-empty, treat it as a filename, read the contents from that file, and write the final re-statement back to a file with the same name but suffixed with _output before the file ext.
 - If `$ARGUMENTS` is empty, read the contents of my clipboard (via `xclip`), and copy the final re-statement to the clipboard via `xclip -selection clipboard`.
 - Before composing the re-statement, ask:
     - whether i want you to propose a short list of possible angles/approaches, and/or
