@@ -13,6 +13,7 @@ Phase 1: clarify and plan (no implementation yet):
     - If a todo ends with ##, this indicates it is complex so you should think about it/investigate even more thoroughly and ask a large number of questions
     - Append to each question "Default answer: " and then specify the default answer (how you will resolve the question if the user doesn't answer it)
         - If I do not answer a question, it means I selected the default answer. Do not ask me the same question again!
+    - let my answers to earlier todos inform what questions you ask for subsequent todos/spec sub-parts.
 - Keep updating that todo's approach based on my clarifications until I accept it, or I implicitly accept it.
 - After the current todo's approach is accepted, record a concrete plan for it based on my comments, elaborations, and responses:
   - If "$ARGUMENTS" is empty, append the plan to `plan/PLAN.md` (create it, and the `plan/` directory, if needed).
