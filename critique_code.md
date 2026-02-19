@@ -12,4 +12,6 @@ Prioritize critiques that are non-obvious, interesting, decisive or significant,
 
 Make sure to explain for each, why it is actually problematic.
 
-Use sub agents to parallelize critique generation for different sections and or using different approaches per agent.
+Use sub agents to parallelize critique generation:
+- For one set of sub-agents, assign each to analyse all sections using a different approach/focus per sub-agent.
+- For another set of sub-agents, assign each to focus on one section and run it through every critique lens.
