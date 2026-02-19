@@ -6,8 +6,8 @@ Critique and find as many material logical, mathematical, conceptual, or interna
 
 Focus on abstract and conceptual issues, incl. the underlying explicit/implicit assumptions, not nitty-gritty code issues. Put substantial effort into inferring the likely goal of each part before evaluating it, so you can judge each part against its intended purpose.
 
-Very thoroughly review all ideas, arguments, solutions, assumptions, and conclusions, and identify logical or conceptual errors, inconsistencies, contradictions, ambiguity, confusion, redundancy, superfluous logic, unresolved problems, and incorrect premises.
+Very thoroughly review all ideas, solutions, assumptions, and conclusions, and identify logical or conceptual errors, inconsistencies, contradictions, ambiguity, confusion, redundancy, superfluous logic, unresolved problems, or architectural issues.
 
 Prioritize critiques that are non-obvious, interesting, decisive or significant, and novel.
 
-Use sub agents to parallelize critique generation for different parts of the file and or using different approaches per agent.
+Use sub agents to parallelize critique generation for different sections and or using different approaches per agent.
