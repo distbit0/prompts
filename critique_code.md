@@ -10,4 +10,6 @@ Very thoroughly review all ideas, solutions, assumptions, and conclusions, and i
 
 Prioritize critiques that are non-obvious, interesting, decisive or significant, and novel.
 
+Make sure to explain for each, why it is actually problematic.
+
 Use sub agents to parallelize critique generation for different sections and or using different approaches per agent.
