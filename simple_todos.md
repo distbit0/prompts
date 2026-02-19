@@ -4,13 +4,13 @@ If it is a file name, todos to be completed are listed at the bottom of the file
 Default workflow: plan first, then implement.
 
 Phase 1: clarify and plan (no implementation yet):
-- Work through the todo list one todo at a time.
+- Work through the todo list one todo at a time. If it is a spec, treat it as a series of sub-parts of each you can ask questions about. 
 - For the current todo, first find the code, documents, or sections it requires modification of, then propose an approach that addresses it.
     - Ask only non-obvious questions that resolve material ambiguity about my intent.
         - Use questions to support planning and implementation, and ask me to confirm the approach for the TODO.
         - Do not ask obvious or confirmatory questions.
         - Ask many questions, ideally which are generative, surface significant/important trade-offs, and when they reflect deep thought about the task and the available approaches and potential objectives I might have.
-    - If a todo ends with !, this indicates it is complex so you should think about it/investigate even more thoroughly and ask a large number of questions
+    - If a todo ends with ##, this indicates it is complex so you should think about it/investigate even more thoroughly and ask a large number of questions
     - Append to each question "Default answer: " and then specify the default answer (how you will resolve the question if the user doesn't answer it)
         - If I do not answer a question, it means I selected the default answer. Do not ask me the same question again!
 - Keep updating that todo's approach based on my clarifications until I accept it, or I implicitly accept it.
