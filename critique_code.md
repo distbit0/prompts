@@ -9,3 +9,5 @@ Focus on abstract and conceptual issues, incl. the underlying explicit/implicit 
 Very thoroughly review all ideas, arguments, solutions, assumptions, and conclusions, and identify logical or conceptual errors, inconsistencies, contradictions, ambiguity, confusion, redundancy, superfluous logic, unresolved problems, and incorrect premises.
 
 Prioritize critiques that are non-obvious, interesting, decisive or significant, and novel.
+
+Use sub agents to parallelize critique generation for different parts of the file and or using different approaches per agent.

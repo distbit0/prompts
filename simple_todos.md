@@ -1,5 +1,5 @@
 Todo source and scope: "$ARGUMENTS" is either empty or a file name.
-If it is a file name, todos to be completed are listed at the bottom of the file. Only modify that file, though you can read other files if helpful. If "$ARGUMENTS" is empty, use the repo-wide todo file and repo-wide editing scope.
+If it is a file name, todos to be completed are listed at the bottom of the file. Only modify that file, though you can read other files if helpful. If "$ARGUMENTS" is empty, use the repo-wide todo or spec file and repo-wide editing scope.
 
 Default workflow: plan first, then implement.
 
@@ -17,13 +17,14 @@ Phase 1: clarify and plan (no implementation yet):
 - Keep updating that todo's approach based on my clarifications until I accept it, or I implicitly accept it.
 - After the current todo's approach is accepted, record a concrete plan for it based on my comments, elaborations, and responses:
   - If "$ARGUMENTS" is empty, append the plan to `plan/PLAN.md` (create it, and the `plan/` directory, if needed).
-    - Make sure the plan you append to PLAN.md is completely self-contained and doesn't require the original todos or my answers to your questions as context in order to be understood & executed. Ensure all relevant context is provided. Do not "abbreviate" unnecessarily. 
+    - Make sure the plan you append to PLAN.md is completely self-contained and doesn't require the original todos nor my answers to your questions as context in order to be understood & executed. Ensure all relevant context is provided. 
+    - Do not include the original text of the todo int he `plan/PLAN.md` file
   - If "$ARGUMENTS" is a file name, append the plan as indented text directly below that todo in the same file, so the plan is visually nested under the todo item.
 - Do not ask questions for later todos until the current todo is accepted and planned.
 - After planning the last todo, check whether any new todos have been added.
 - Do not skip any todos unless I ask you to.
 
-Once finished phase 1, ask if I'd like to continue to phase 2 or if I have any other requests/comments/critiques before implementing.
+Once finished phase 1, ask if I'd like to continue to phase 2 or if I have any other requests/comments/critiques before implementing. Remind me to run a critique prompt on the PLAN before proceeding.
 Phase 2: implement (driven by the recorded plan):
 - Only start implementing once Phase 1 is complete for all todos (except those I asked to skip).
 - If I tell you to start implementing the todos covered so far and skip the rest, do that even if there are remaining todos.
