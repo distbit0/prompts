@@ -17,7 +17,7 @@ Phase 1: clarify and plan (no implementation yet):
 - Keep updating that todo's approach based on my clarifications until I accept it, or I implicitly accept it.
 - After the current todo's approach is accepted, record a concrete plan for it based on my comments, elaborations, and responses:
   - If "$ARGUMENTS" is empty, append the plan to `plan/PLAN.md` (create it, and the `plan/` directory, if needed).
-    - Make sure the plan you append to PLAN.md is completely self-contained and doesn't require the original todo as context in order to be understood & executed
+    - Make sure the plan you append to PLAN.md is completely self-contained and doesn't require the original todos or my answers to your questions as context in order to be understood & executed. Ensure all relevant context is provided. Do not "abbreviate" unnecessarily. 
   - If "$ARGUMENTS" is a file name, append the plan as indented text directly below that todo in the same file, so the plan is visually nested under the todo item.
 - Do not ask questions for later todos until the current todo is accepted and planned.
 - After planning the last todo, check whether any new todos have been added.
