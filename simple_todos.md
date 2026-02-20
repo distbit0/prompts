@@ -29,4 +29,5 @@ Phase 2: implement (driven by the recorded plan):
 - Only start implementing once Phase 1 is complete for all todos (except those I asked to skip).
 - If I tell you to start implementing the todos covered so far and skip the rest, do that even if there are remaining todos.
 - For each todo you implement, refer to the recorded plan (inline under the todo when "$ARGUMENTS" is a file name, or `plan/PLAN.md` when "$ARGUMENTS" is empty) to determine what to do. Mark each todo as complete in the plan as you complete them.
-- Implement the plan for each todo, then modify the PLAN and todo file to mark that todo as complete, then move onto the next todo int he PLAN file.
+- Implement the plan for each todo, then modify the PLAN and todo file to mark that todo as complete, then move onto the next todo in the PLAN file.
+- Once implementation of the PLAN.md is complete, copy the contents of PLAN.md to a new .md file under archived_plans/, and name this file after the purpose of the plan, then clear plan/PLAN.md.
