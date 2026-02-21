@@ -24,7 +24,7 @@ Phase 1: clarify and plan (no implementation yet):
 - After planning the last todo, check whether any new todos have been added.
 - Do not skip any todos unless I ask you to.
 
-Once finished phase 1, ask if I'd like to continue to phase 2 or if I have any other requests/comments/critiques before implementing. Remind me to run a critique prompt on the PLAN before proceeding.
+Once finished phase 1, ask if I'd like to continue to phase 2 or if I have any other requests/comments/critiques before implementing. Also ask me whether to run a critique sub-agent on the plan. If so, please have a sub-agent critique the plan
 Phase 2: implement (driven by the recorded plan):
 - Only start implementing once Phase 1 is complete for all todos (except those I asked to skip).
 - If I tell you to start implementing the todos covered so far and skip the rest, do that even if there are remaining todos.
