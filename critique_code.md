@@ -17,4 +17,4 @@ Make sure to explain for each, why it is actually problematic. Make sure to prop
 Use sub agents to parallelize critique generation:
 - For one set of sub-agents, assign each to analyse all sections using a different approach/focus per sub-agent.
 
-Also mention if you notice any other significant issues while carrying out the review.
+Also mention if you notice any other SIGNIFICANT issues while carrying out the review.
