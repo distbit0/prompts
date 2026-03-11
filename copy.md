@@ -1,1 +1,0 @@
-copy the text provided in your previous message to the clipboard using xclip -selection clipboard

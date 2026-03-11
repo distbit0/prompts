@@ -15,6 +15,6 @@ Prioritize critiques that are non-obvious, interesting, decisive or significant,
 Make sure to explain for each, why it is actually problematic. Make sure to properly explain each issue so it can be understood without needing to ask more questions. 
 
 Use sub agents to parallelize critique generation:
-- For one set of sub-agents, assign each to analyse all sections using a different approach/focus per sub-agent.
+- Assign each sub-agent a distinct approach/focus/strategy.
 
 Also mention if you notice any other SIGNIFICANT issues while carrying out the review.
