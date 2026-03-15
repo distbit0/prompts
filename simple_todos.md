@@ -16,9 +16,9 @@ Phase 1: clarify and plan (no implementation yet):
     - let my answers to earlier todos inform what questions you ask for subsequent todos/spec sub-parts.
 - Keep updating that todo's approach based on my clarifications until I accept it, or I implicitly accept it.
 - After the current todo's approach is accepted, record a concrete plan for it based on my comments, elaborations, and responses:
-  - If "$ARGUMENTS" is empty, append the plan to `plan/PLAN.md` (create it, and the `plan/` directory, if needed).
-    - Make sure the plan you append to PLAN.md is completely self-contained and doesn't require the original todos nor my answers to your questions as context in order to be understood & executed. Ensure all relevant context is provided. 
-    - Do not include the original text of the todo int he `plan/PLAN.md` file
+  - If "$ARGUMENTS" is empty, write the plan to its own file under `plan/` (create the directory if needed), using a concise descriptive filename for that todo and adding a numeric prefix only when needed to keep filenames unique and ordered.
+    - Make sure each plan file is completely self-contained and doesn't require the original todos nor my answers to your questions as context in order to be understood and executed. Ensure all relevant context is provided.
+    - Do not include the original text of the todo in the plan file.
   - If "$ARGUMENTS" is a file name, append the plan as indented text directly below that todo in the same file, so the plan is visually nested under the todo item.
 - Do not ask questions for later todos until the current todo is accepted and planned.
 - After planning the last todo, check whether any new todos have been added.
@@ -28,7 +28,8 @@ Once finished phase 1, ask if I'd like to continue to phase 2 or if I have any o
 Phase 2: implement (driven by the recorded plan):
 - Only start implementing once Phase 1 is complete for all todos (except those I asked to skip).
 - Make one commit after implementing each todo.
+- Use a sub agent to implement each todo, but only run > 1 in parallel where this will not result in conflicts.
 - If I tell you to start implementing the todos covered so far and skip the rest, do that even if there are remaining todos.
-- For each todo you implement, refer to the recorded plan (inline under the todo when "$ARGUMENTS" is a file name, or `plan/PLAN.md` when "$ARGUMENTS" is empty) to determine what to do. Mark each todo as complete in the plan as you complete them.
-- Implement the plan for each todo, then modify the PLAN and todo file to mark that todo as complete, then move onto the next todo in the PLAN file.
-- Once implementation of the PLAN.md is complete, copy the contents of PLAN.md to a new .md file under plan/archived/, and name this file after the purpose of the plan, then clear plan/PLAN.md.
+- For each todo you implement, refer to the recorded plan (inline under the todo when "$ARGUMENTS" is a file name, or that todo's file under `plan/` when "$ARGUMENTS" is empty) to determine what to do. Mark each todo as complete in its plan as you complete them.
+- Implement each todo's plan, then modify the plan file and todo file to mark that todo as complete, then move onto the next todo's plan file.
+- Once implementation of a per-todo plan file is complete, copy it to `plan/archived/` using the same filename, then remove it from `plan/`.
