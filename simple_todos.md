@@ -24,12 +24,20 @@ Phase 1: clarify and plan (no implementation yet):
 - After planning the last todo, check whether any new todos have been added.
 - Do not skip any todos unless I ask you to.
 
-Once finished phase 1, ask if I'd like to continue to phase 2 or if I have any other requests/comments/critiques before implementing. Also ask me whether to run a critique sub-agent on the plan. If so, please have a sub-agent critique the plan in the context of the relevant code and my implicit + stated goals.
+Once finished phase 1, ask if I'd like to continue to phase 2 or if I have any other requests/comments/critiques before implementing. Also ask me whether to run a critique sub-agent on the plan. If so, please have a sub-agent critique the plans in the context of the relevant code and my implicit + stated goals.
+When moving to phase 2, use the current worktree only for coordination and bookkeeping; use per-todo worktrees for implementation.
 Phase 2: implement (driven by the recorded plan):
 - Only start implementing once Phase 1 is complete for all todos (except those I asked to skip).
-- Make one commit after implementing each todo.
-- Use a sub agent to implement each todo, but only run > 1 in parallel where this will not result in conflicts.
+- Treat the current worktree as the coordinator worktree. It owns the todo file and all `plan/` files.
+- Only the coordinator worktree may modify the todo file, mark plan steps complete, archive plan files, or mark a todo as complete.
+- For each todo, create a dedicated git branch and git worktree before spawning its implementation sub-agent.
+- Run that todo's implementation sub-agent only inside its dedicated worktree.
+- The implementation sub-agent may read the recorded plan and todo file, but must not modify `plan/` files or the todo file. It should only implement the todo's code or document changes in its own worktree.
+- Make one commit in the todo's dedicated worktree after implementing that todo.
+- Use a separate worktree for each todo you implement. Only run > 1 implementation sub-agent in parallel when their planned file edits will not conflict.
 - If I tell you to start implementing the todos covered so far and skip the rest, do that even if there are remaining todos.
-- For each todo you implement, refer to the recorded plan (inline under the todo when "$ARGUMENTS" is a file name, or that todo's file under `plan/` when "$ARGUMENTS" is empty) to determine what to do. Mark each todo as complete in its plan as you complete them.
-- Implement each todo's plan, then modify the plan file and todo file to mark that todo as complete, then move onto the next todo's plan file.
+- After a todo's implementation sub-agent finishes, integrate its commit back into the coordinator worktree by cherry-picking that todo commit unless I instruct otherwise.
+- For each todo you implement, refer to the recorded plan (inline under the todo when "$ARGUMENTS" is a file name, or that todo's file under `plan/` when "$ARGUMENTS" is empty) to determine what to do.
+- After the implementation commit is integrated into the coordinator worktree, update the recorded plan to mark its steps complete, then modify the todo file to mark that todo as complete.
 - Once implementation of a per-todo plan file is complete, copy it to `plan/archived/` using the same filename, then remove it from `plan/`.
+- After the todo is integrated and its bookkeeping is complete, remove its dedicated worktree and delete its temporary branch if it is no longer needed.
