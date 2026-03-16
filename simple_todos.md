@@ -16,7 +16,7 @@ Phase 1: clarify and plan (no implementation yet):
     - let my answers to earlier todos inform what questions you ask for subsequent todos/spec sub-parts.
 - Keep updating that todo's approach based on my clarifications until I accept it, or I implicitly accept it.
 - After the current todo's approach is accepted, record a concrete plan for it based on my comments, elaborations, and responses:
-  - If "$ARGUMENTS" is empty, write the plan to its own file under `plan/` (create the directory if needed), using a concise descriptive filename for that todo and adding a numeric prefix only when needed to keep filenames unique and ordered.
+  - If "$ARGUMENTS" is empty, write the plan to its own file under `plan/` (create the directory if needed), using a concise descriptive filename for that todo.
     - Make sure each plan file is completely self-contained and doesn't require the original todos nor my answers to your questions as context in order to be understood and executed. Ensure all relevant context is provided.
     - Do not include the original text of the todo in the plan file.
   - If "$ARGUMENTS" is a file name, append the plan as indented text directly below that todo in the same file, so the plan is visually nested under the todo item.
